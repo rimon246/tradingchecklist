@@ -40,7 +40,33 @@ input,select,textarea{width:100%;background:#0a1424;border:1px solid var(--line)
 <section class="panel">
  <h2>Trade details</h2>
  <div class="fields">
-  <div class="field"><label>Trading pair</label><select id="pair"><option>XAUUSD</option><option>EURUSD</option><option>GBPCHF</option><option>GBPUSD</option><option>USDJPY</option><option>BTCUSD</option><option>Other</option></select></div>
+  <div class="field"><label>Trading pair</label><select id="pair">
+    <optgroup label="Major Forex Pairs">
+      <option>EURUSD</option><option>GBPUSD</option><option>USDJPY</option>
+      <option>USDCHF</option><option>AUDUSD</option><option>USDCAD</option><option>NZDUSD</option>
+    </optgroup>
+    <optgroup label="Minor / Cross Forex Pairs">
+      <option>EURGBP</option><option>EURJPY</option><option>EURCHF</option><option>EURAUD</option>
+      <option>EURCAD</option><option>EURNZD</option><option>GBPJPY</option><option>GBPCHF</option>
+      <option>GBPAUD</option><option>GBPCAD</option><option>GBPNZD</option><option>CHFJPY</option>
+      <option>AUDJPY</option><option>AUDCHF</option><option>AUDCAD</option><option>AUDNZD</option>
+      <option>CADJPY</option><option>CADCHF</option><option>NZDJPY</option><option>NZDCHF</option>
+      <option>NZDCAD</option>
+    </optgroup>
+    <optgroup label="Exotic Forex Pairs">
+      <option>USDSGD</option><option>USDHKD</option><option>USDCNH</option><option>USDTRY</option>
+      <option>USDZAR</option><option>USDMXN</option><option>USDPLN</option><option>USDHUF</option>
+      <option>USDCZK</option><option>USDSEK</option><option>USDNOK</option><option>USDDKK</option>
+      <option>USDTHB</option><option>USDINR</option><option>USDIDR</option><option>USDKRW</option>
+      <option>USDILS</option><option>USDPHP</option><option>USDBRL</option>
+      <option>EURTRY</option><option>EURZAR</option><option>EURPLN</option><option>EURHUF</option>
+      <option>GBPZAR</option><option>GBPNOK</option><option>GBPSEK</option>
+    </optgroup>
+    <optgroup label="Metals & Crypto">
+      <option>XAUUSD</option><option>XAGUSD</option><option>BTCUSD</option><option>ETHUSD</option>
+    </optgroup>
+    <option>Other</option>
+  </select></div>
   <div class="field"><label>Direction</label><select id="direction"><option>BUY</option><option>SELL</option></select></div>
   <div class="field"><label>Analysis date</label><input id="tradeDate" type="date"></div>
   <div class="field"><label>Setup name / ID</label><input id="setup" placeholder="e.g. London AOI rejection"></div>
